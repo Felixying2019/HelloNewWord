@@ -1,0 +1,15 @@
+
+>>> try:
+	with open(filename) as f_obj:
+		contents=f_obj.read()
+except FileNotFoundError:
+	msg="Sorry, the file"+baename
+	+"does not exist!"
+	print(msg)
+else:
+	words=contents.split()
+	num_words=len(words)
+	print("The file "+basename+" has about "+str(num_words)+" words.")
+
+	
+The file Alice.txt has about 12767 words.
